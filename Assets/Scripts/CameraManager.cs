@@ -36,6 +36,6 @@ public class CameraManager : MonoBehaviour
         transform.position = newPosition;
 
         // Decommentare se si vuole che la camera punti al target
-        transform.LookAt(ship.position);
+        //transform.LookAt(ship.position);
     }
 }
