@@ -9,9 +9,5 @@ public class RandomScaler : MonoBehaviour
         transform.localScale = new Vector3(scale, scale, scale);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
