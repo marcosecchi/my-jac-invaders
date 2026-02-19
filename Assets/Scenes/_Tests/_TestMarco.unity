@@ -775,6 +775,9 @@ PrefabInstance:
       addedObject: {fileID: 1738916275}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5f84588c17912468cfff5e2d254dc5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1674768793}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5f84588c17912468cfff5e2d254dc5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 188370612}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5f84588c17912468cfff5e2d254dc5, type: 3}
       insertIndex: -1
@@ -906,9 +909,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226b91dabcb1f1f4f9db89c298d94f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraManager
-  target: {fileID: 0}
+  target1: {fileID: 0}
+  target2: {fileID: 0}
   ship: {fileID: 0}
   followSpeed: 1
+--- !u!1 &1674768792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674768793}
+  m_Layer: 0
+  m_Name: Target2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674768793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674768792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.74, z: 0.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023671874}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738916274
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738916275}
   m_Layer: 0
-  m_Name: Target
+  m_Name: Target1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1107,7 +1142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226b91dabcb1f1f4f9db89c298d94f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraManager
-  target: {fileID: 1738916275}
+  target1: {fileID: 0}
+  target2: {fileID: 0}
   ship: {fileID: 82338864}
   followSpeed: 1
 --- !u!1001 &4828468406917389108
