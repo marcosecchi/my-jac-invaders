@@ -810,6 +810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4445646521757789787, guid: 4902fcefc0eb0ea47a82ae15f94a5971, type: 3}
+      propertyPath: DestroyPercentage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5518752654443962533, guid: 4902fcefc0eb0ea47a82ae15f94a5971, type: 3}
       propertyPath: m_Name
       value: ProcMountainPrefab
