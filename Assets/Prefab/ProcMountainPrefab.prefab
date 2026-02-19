@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7017582339035122327}
+  - component: {fileID: 4445646521757789787}
   m_Layer: 0
   m_Name: ProcMountainPrefab
   m_TagString: Untagged
@@ -34,6 +35,19 @@ Transform:
   - {fileID: 5291244469892368486}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4445646521757789787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518752654443962533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b1063154bea234ea3726a9921556bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomDestroyer
+  DestroyPercentage: 0.36
 --- !u!1001 &2067801697482666187
 PrefabInstance:
   m_ObjectHideFlags: 0
