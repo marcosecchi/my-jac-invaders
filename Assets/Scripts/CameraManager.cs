@@ -4,9 +4,12 @@ public class CameraManager : MonoBehaviour
 {
     public Transform target1;
     public Transform target2;
-    public Transform ship;
+
+    public Transform RotationTarget1;
+    public Transform RotationTarget2;
 
     Transform actualTarget;
+    Transform actualRotationTarget;
 
     [Range(0f, 100f)]
     public float followSpeed = 1.0f;
@@ -14,6 +17,7 @@ public class CameraManager : MonoBehaviour
     void Start()
     {
         actualTarget = target1;
+        actualRotationTarget = RotationTarget1;
     }
 
     void Update()
@@ -25,10 +29,12 @@ public class CameraManager : MonoBehaviour
             if(actualTarget == target1)
             {
                 actualTarget = target2;
+                actualRotationTarget = RotationTarget2;
             }
             else
             {
                 actualTarget = target1;
+                actualRotationTarget = RotationTarget1;
             }
         }
         var newPosition = Vector3.Lerp(
@@ -36,6 +42,6 @@ public class CameraManager : MonoBehaviour
         transform.position = newPosition;
 
         // Decommentare se si vuole che la camera punti al target
-        //transform.LookAt(ship.position);
+        transform.LookAt(actualRotationTarget.position);
     }
 }
