@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/ShipController.unity
+    guid: 1c0da3c120d8c084ca36a5a57dd3d514
+  - enabled: 1
     path: Assets/Scenes/_Tests/_TestMarco.unity
     guid: fbe76d13d4b3c41459b47c8de1e8d265
   - enabled: 1

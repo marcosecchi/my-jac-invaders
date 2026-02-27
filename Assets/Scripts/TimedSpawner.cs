@@ -10,6 +10,8 @@ public class TimedSpawner : MonoBehaviour
     public float maxSpawnTime = 1.5f;
     public int waves = 4;
 
+    public GameObject Player;
+
     public AudioSource audio;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,11 +24,15 @@ public class TimedSpawner : MonoBehaviour
     {
         if(shouldSpawn && waves > 0)
         {
-            Instantiate(
+            var go = Instantiate(
                 prefab, transform.position, transform.rotation);
             var nextSpawn = Random.Range(minSpawnTime, maxSpawnTime);
+            go.transform.LookAt(Player.transform.position);
             Invoke("Spawn", nextSpawn);
-            audio.Play();
+            if(audio != null)
+            {
+                audio.Play();
+            }
             waves--;
         }
     }
